@@ -1,0 +1,58 @@
+name: Missing Documentation
+description: Request documentation for a topic, feature, or concept that is not yet covered.
+title: "[Missing Docs]: "
+labels: ["documentation", "new content"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Can't find documentation for something? Let us know what's missing!
+        The more context you provide, the easier it is for us to prioritize and write the content.
+
+  - type: textarea
+    id: topic
+    attributes:
+      label: What topic or feature is missing documentation?
+      description: Describe the subject that needs to be documented.
+      placeholder: "There is no documentation on how to configure custom authentication providers..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Why do you need this documentation?
+      description: Explain your use case or the problem you are trying to solve.
+      placeholder: "I want to integrate my company's SSO provider but I can't find any guidance..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: existing-resources
+    attributes:
+      label: Existing resources
+      description: List any related docs, code, or external resources you found that partially cover this topic.
+      placeholder: "I found a community blog post at https://example.com/post but it is outdated..."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: How important is this to you?
+      options:
+        - "Nice to have"
+        - "Important — I'm blocked without it"
+        - "Critical — required for production use"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched the existing documentation and did not find this topic.
+          required: true
+        - label: I searched existing issues and did not find a duplicate.
+          required: true

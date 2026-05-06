@@ -1,0 +1,58 @@
+name: Documentation Improvement
+description: Suggest an improvement to existing documentation content, structure, or clarity.
+title: "[Doc Improvement]: "
+labels: ["documentation", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea to make the docs better? We'd love to hear it!
+        Please describe the current state and what you'd like to see improved.
+
+  - type: input
+    id: page-url
+    attributes:
+      label: Page URL or file path
+      description: Link to the documentation page or path to the source file you'd like to see improved.
+      placeholder: "https://docs.example.com/guide or docs/guide.md"
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-state
+    attributes:
+      label: What is the current state?
+      description: Describe what the documentation currently says or how it is structured.
+      placeholder: "The 'Getting Started' section jumps straight into advanced configuration without explaining basic setup..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: improvement
+    attributes:
+      label: What improvement would you like to see?
+      description: Describe your suggested change. Include examples, diagrams, or references if helpful.
+      placeholder: "Add a minimal 'Hello World' example before the advanced configuration section..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: improvement-type
+    attributes:
+      label: Type of improvement
+      options:
+        - "Clarity — content is hard to understand"
+        - "Structure — content is hard to navigate"
+        - "Completeness — important details are missing"
+        - "Examples — more or better examples needed"
+        - "Other"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and did not find a duplicate.
+          required: true
