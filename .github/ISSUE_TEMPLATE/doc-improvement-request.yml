@@ -1,7 +1,7 @@
 name: 🧠 Suggest a documentation improvement
 description: Suggest an improvement to existing documentation content, structure, or clarity.
 title: "[Improvement]: "
-labels: ["improvement"]
+labels: ["enhancement"]
 body:
   - type: markdown
     attributes:
