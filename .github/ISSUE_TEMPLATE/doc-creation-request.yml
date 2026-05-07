@@ -1,7 +1,7 @@
-name: Missing Documentation
+name: ❇️ Request new documentation content
 description: Request documentation for a topic, feature, or concept that is not yet covered.
-title: "[Missing Docs]: "
-labels: ["documentation", "new content"]
+title: "[New Content]: "
+labels: ["new content"]
 body:
   - type: markdown
     attributes:
@@ -32,7 +32,7 @@ body:
     attributes:
       label: Existing resources
       description: List any related docs, code, or external resources you found that partially cover this topic.
-      placeholder: "I found a community blog post at https://example.com/post but it is outdated..."
+      placeholder: "I found a guide at https://docs.ton.org/getting-started but it is outdated..."
     validations:
       required: false
 
@@ -41,9 +41,9 @@ body:
     attributes:
       label: How important is this to you?
       options:
-        - "Nice to have"
-        - "Important — I'm blocked without it"
-        - "Critical — required for production use"
+        - "Low - Nice to have"
+        - "Medium — I'm blocked without it"
+        - "High — required for production use"
     validations:
       required: true
 

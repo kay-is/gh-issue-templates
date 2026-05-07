@@ -1,7 +1,7 @@
-name: Documentation Bug
+name: 🐛 Report a documentation bug
 description: Report inaccurate, outdated, or broken content in the documentation.
-title: "[Doc Bug]: "
-labels: ["documentation", "bug"]
+title: "[Bug Report]: "
+labels: ["bug"]
 body:
   - type: markdown
     attributes:
@@ -10,11 +10,11 @@ body:
         Please fill in as much detail as possible so we can fix the issue quickly.
 
   - type: input
-    id: page-url
+    id: page
     attributes:
       label: Page URL or file path
       description: Link to the documentation page or path to the source file that contains the issue.
-      placeholder: "https://docs.example.com/guide or docs/guide.md"
+      placeholder: "https://docs.ton.org/... or docs/.../file.mdx"
     validations:
       required: true
 

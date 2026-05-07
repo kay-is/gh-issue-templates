@@ -1,7 +1,7 @@
-name: Documentation Improvement
+name: 🧠 Suggest a documentation improvement
 description: Suggest an improvement to existing documentation content, structure, or clarity.
-title: "[Doc Improvement]: "
-labels: ["documentation", "enhancement"]
+title: "[Improvement]: "
+labels: ["improvement"]
 body:
   - type: markdown
     attributes:
@@ -10,16 +10,16 @@ body:
         Please describe the current state and what you'd like to see improved.
 
   - type: input
-    id: page-url
+    id: page
     attributes:
       label: Page URL or file path
       description: Link to the documentation page or path to the source file you'd like to see improved.
-      placeholder: "https://docs.example.com/guide or docs/guide.md"
+      placeholder: "https://docs.ton.org/... or docs/.../file.mdx"
     validations:
       required: true
 
   - type: textarea
-    id: current-state
+    id: description
     attributes:
       label: What is the current state?
       description: Describe what the documentation currently says or how it is structured.
