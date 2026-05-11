@@ -33,6 +33,7 @@ body:
       label: What should it say or show instead?
       description: Describe the correct information or provide a suggested fix.
       placeholder: "The correct flag is --install-dir instead of --dir..."
+      default: "No suggestions."
     validations:
       required: false
 
