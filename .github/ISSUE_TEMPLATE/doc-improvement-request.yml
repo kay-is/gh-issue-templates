@@ -2,6 +2,7 @@ name: 🧠 Suggest a documentation improvement
 description: Suggest an improvement to existing documentation content, structure, or clarity.
 title: "[Improvement]: "
 labels: ["enhancement"]
+type: "Spike"
 body:
   - type: markdown
     attributes:

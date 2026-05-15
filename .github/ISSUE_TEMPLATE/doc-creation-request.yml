@@ -2,6 +2,7 @@ name: ❇️ Request new documentation content
 description: Request documentation for a topic, feature, or concept that is not yet covered.
 title: "[New Content]: "
 labels: ["new content"]
+type: "Spike"
 body:
   - type: markdown
     attributes:
