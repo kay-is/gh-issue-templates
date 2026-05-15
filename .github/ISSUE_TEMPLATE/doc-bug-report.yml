@@ -2,7 +2,6 @@ name: 🐛 Report a documentation bug
 description: Report inaccurate, outdated, or broken content in the documentation.
 title: "[Bug Report]: "
 labels: ["bug"]
-type: "Bug"
 body:
   - type: markdown
     attributes:
